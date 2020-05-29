@@ -49,7 +49,7 @@ pizza_stack.push("my 6th pizza")
 
 pizza_stack.push("my 7th pizza")
 
-# Delivering pizzas from the top of the stack down
+
 print("The first pizza to deliver is " + pizza_stack.peek())
 pizza_stack.pop()
 pizza_stack.pop()
