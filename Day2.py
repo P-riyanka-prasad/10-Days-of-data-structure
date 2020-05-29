@@ -36,8 +36,7 @@ class Stack:
 
   def is_empty(self):
     return self.size == 0
-  
-# Defining an empty pizza stack
+
 pizza_stack = Stack(6)
 # final task
 pizza_stack.push("my 1st pizza")
