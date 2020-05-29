@@ -1,0 +1,56 @@
+Task 1 : — — — — — → Below
+Within stack.py, create a Stack class.
+Define an __init__() method for Stack. Inside the method, set an instance property top_item equal to None.
+2. Below __init__(), define another method peek() that returns the value of the stack’s top_item using the Node method get_value().
+The stack’s push() and pop() methods are our tools to add and remove items from it. pop() additionally returns the value of the item it is removing. Keep in mind that we can only make modifications to the top of the stack.
+Task 2: — — — — — → Below
+Below __init__(), define a method push() for Stack that takes the parameter value. Inside the method:
+Instantiate a Node with value as an argument and assign it to the variable item (because this item is a node, we have easy access to Node’s class methods)
+Set item‘s next node to the stack’s current top_item using the Node method set_next_node()
+Set the stack instance’s top_item equal to the new item, adding it to the top of the stack
+2. Below push(), define a method pop() for Stack. Inside pop():
+Create a variable item_to_remove and set it equal to the stack’s top_item
+If we’re removing our stack’s top_item, we need to set a new top_item! Set the top_item equal to the node after item_to_remove
+Return the value stored in item_to_remove
+Task 3 : — — — — — → Below
+Stacks Python Size I
+With stacks, size matters. If we’re not careful, we can accidentally over-fill them with data. Since we don’t want any stack overflow, we need to go back and make a few modifications to our methods that help us track and limit the stack size so we can keep our stacks healthy.
+What do we do if someone tries to peek() or pop() when our stack is empty?
+How do we keep someone from push()ing to a stack that has already reached its limit?
+How do we even know how large our stack has gotten?
+In __init__(), let’s add two new properties: size and limit.
+limit should be accepted as a parameter with a default of 1000. Inside the method, set the instance limit property to the passed in value of limit.
+size should be set to 0 in __init__().
+2. In peek() and pop(), wrap the current body of each method in an if clause that checks if the size of the stack is greater than 0.
+At the end of each method, outside the if clause, add an else clause with a print statement to let users know that the stack is empty.
+3. In pop() just before the return statement, reduce the size of the stack by 1.
+Stacks Python Size II
+It’s time to add a couple helper methods.
+Helper methods simplify the code we’ve written by abstracting and labeling chunks of code into a new function. Here’s an example:
+
+This might seem like a silly example, but think about the benefit of the add_exclamation_to_string helper.
+The name tells us what this function does.
+2. Without a helper, we need to read the code to understand its meaning.
+3. The function lets us repeat this behavior
+4. Without a helper, we’d need to rewrite the same code!
+First, we want one that checks if our stack has room for more items. We can use this in push() to guard against pushing items to our stack when it’s full.
+Second, it’s helpful to have a method that checks if the stack is empty…
+Task 4 : — — — — — → Below
+Define a new method has_space() in Stack. The method should return True if self.limit is greater than self.size.
+2. Go back to your push() method — we need to make sure we’re keeping track of our stack size when we add new items. At the end of your method body, increment self.size by 1.
+3. Now add an if clause at the top of push() that checks if your stack has space (using your newly created helper method).
+If there’s space, the rest of the body of the method should execute
+If there’s no space, we want to print a message letting users know that the stack is already full. Something like “All out of space!” should be good.
+4. Finally, let’s define a new method is_empty() in Stack.
+The method should return True if the stack’s size is 0.
+Anywhere we’ve written if self.size > 0: can now be replaced with if not self.is_empty().
+Overall Submission Final Task
+Students successfully submitted above 4 task and also this task is Awarded by Awesome Cheat Sheet from my side
+Nice work — you’ve built out a Stack class that can:
+add a new item to the top via a push() method
+remove an item from the top and returns its value with a pop() method
+return the value of the top item using a peek() method
+allows a stack instance to maintain an awareness of its size to prevent stack “overflow”
+So how does your code stack up against pizza delivery?
+Task Final — — — →
+Uncomment the push() and pop() statements at the bottom of your code to see your Stack class help a pizza delivery place efficiently manage delivering a stack of pizzas.
