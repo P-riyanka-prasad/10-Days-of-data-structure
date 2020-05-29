@@ -40,12 +40,12 @@ class Stack:
 # Defining an empty pizza stack
 pizza_stack = Stack(6)
 # final task
-pizza_stack.push("pizza #1")
-pizza_stack.push("pizza #2")
-pizza_stack.push("pizza #3")
-pizza_stack.push("pizza #4")
-pizza_stack.push("pizza #5")
-pizza_stack.push("pizza #6")
+pizza_stack.push("my 1st pizza")
+pizza_stack.push("my 2nd pizza")
+pizza_stack.push("my 3rd pizza")
+pizza_stack.push("my 4th pizza")
+pizza_stack.push("my 5th pizza")
+pizza_stack.push("my 6th pizza")
 
 
 pizza_stack.push("pizza #7")
