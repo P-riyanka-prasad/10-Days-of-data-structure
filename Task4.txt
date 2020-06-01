@@ -1,0 +1,15 @@
+Problem
+In this exercise, you are required to determine whether a given linked list is a circular linked list or not. Your solution should 
+return True or False to indicate if the linked list that was passed in to the method is circular or not.
+
+
+
+
+Coding Time!
+In the code below, the is_circular_linked_list is a class method of the CircularLinkedList class. You cannot see the rest 
+of the code as it is hidden. As is_circular_linked_list is a class method, please make sure that you don’t change 
+the indentation of the code provided to you. You are required to write your solution under the method prototype.
+For this exercise, you are required to return either True or False based on whether input_list is circular or not. In the test cases,
+the ellipses (...) are used to depict circular linked lists which means that they represent that the next node in the linked list
+is the head node.
+
