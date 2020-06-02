@@ -1,0 +1,10 @@
+Remove Duplicates
+Challenge yourself with an exercise in which you’ll have to remove duplicates from a doubly linked list.
+Problem
+In this exercise, you are required to remove the duplicates from a doubly linked list.
+
+
+In the exercise widget, the delete_node method has been given to you. It is a slight modification of the delete method we covered in one of the previous lessons. You have to figure out the modification yourself. The hint is to recall the remove_duplicates lesson from one of the previous chapters.
+Coding Time!
+In the code below, the remove_duplicates is a class method of the DoublyLinkedList class. You cannot see the rest of the code as it is hidden. As remove_duplicates is a class method, please make sure that you don’t change the indentation of the code provided to you. You are required to write your solution under the method prototype.
+For this exercise, you are not required to return anything. Just remove the duplicates from the linked list using the delete_node method.
