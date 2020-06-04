@@ -1,0 +1,10 @@
+The size of the tree is the total number of nodes in a tree. You are required to return the size of a binary
+tree given the root node of the tree.
+Below is an example illustrated for you:
+
+![image](https://miro.medium.com/max/1400/1*6tWKhwx-dY48KTQ2Cd-hJg.png)
+
+Coding Time!
+In the code below, size_ is a class method of the BinaryTree class. You cannot see the rest of the code as it is hidden
+. As size_ is a class method, please make sure that you don’t change the indentation of the code provided to you.
+You are required to write your solution under the method prototype and return the size of the tree from the method.
