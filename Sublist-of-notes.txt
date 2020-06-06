@@ -6,5 +6,5 @@ Day5:https://link.medium.com/xaC3b1blX6
 Day6:https://link.medium.com/BceBVYr0Y6
 Day7:https://link.medium.com/dSqSN3hG06
 Day8:https://link.medium.com/kN6wxK7j26
-Day9:
-Day10:
+Day9:https://medium.com/@Yasin_Shah/recursion-in-python-b9b468dd1e61
+Day10:https://medium.com/@Yasin_Shah/string-processing-in-python-7104764f3681
